@@ -1,0 +1,14 @@
+{
+    "clientId": "a21d14fe950b434585417d04bec7dde7",
+    "redirectUri": "http://localhost:42069/callback",
+    "authorizeServerPort": 42069,
+    "scopes": [
+        "playlist-read-private",
+        "playlist-read-collaborative",
+        "playlist-modify-private",
+        "playlist-modify-public",
+        "user-top-read",
+        "user-read-recently-played",
+        "user-read-private"
+    ]
+}
