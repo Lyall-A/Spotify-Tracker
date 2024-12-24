@@ -10,6 +10,8 @@ let authorized = null;
 global.authorized = authorized;
 global.api = api;
 
+console.log(`Supported types:\n${types.map(i => `${i.name} [${i.type}]: ${i.description}`).join("\n")}\n`);
+
 await authorize();
 
 for (const task of tasks) {

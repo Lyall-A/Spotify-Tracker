@@ -11,14 +11,8 @@ module.exports = [
             playlistName: () => `Top Tracks (${new Date().toLocaleDateString()})`,
             playlistDescription: (tracks) => {
                 const artists = tracks.map(i => i.artists[0].name);
-
-                const countMap = artists.reduce((acc, artist) => {
-                    acc[artist] = (acc[artist] || 0) + 1;
-                    return acc;
-                }, {});
-
+                const countMap = artists.reduce((acc, artist) => { acc[artist] = (acc[artist] || 0) + 1; return acc }, {});
                 const sortedArtists = Object.entries(countMap).sort((a, b) => b[1] - a[1]).slice(0, 5);
-
                 return `${sortedArtists.map(([artist]) => artist).join(", ")} and more`
             }
         }
