@@ -1,6 +1,6 @@
 module.exports = [
     {
-        name: "Top Tracks",
+        name: "Weekly Top Tracks backup",
         type: "top-tracks",
         runOnStart: true,
         startDate: startOnWeek(1, 3), // Run on Monday's at 3 AM
@@ -18,7 +18,7 @@ module.exports = [
         }
     },
     {
-        name: "Discover Weekly",
+        name: "Weekly Discover Weekly backup",
         type: "discover-weekly",
         runOnStart: true,
         startDate: startOnWeek(1, 3), // Run on Monday's at 3 AM
