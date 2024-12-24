@@ -27,7 +27,6 @@ module.exports = [
         name: "Discover Weekly",
         type: "discover-weekly",
         runOnStart: true,
-        runOnSetup: true,
         startDate: startOnWeek(1, 3), // Run on Monday's at 3 AM
         interval: 7 * 24 * 60, // Weekly
         typeOptions: {
